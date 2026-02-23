@@ -248,3 +248,25 @@ nav a {
         width: 280px;
     }
 }
+
+/* BOTÃO WHATSAPP FIXO */
+.whatsapp-fixo {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background: #25d366;
+    color: #fff;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-fixo:hover {
+    transform: scale(1.08);
+}
