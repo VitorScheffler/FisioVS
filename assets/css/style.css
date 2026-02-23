@@ -194,3 +194,19 @@ nav a {
         font-size: 28px;
     }
 }
+
+/* FOOTER */
+.footer {
+    background: #0f7f83;
+    color: #e0f7f7;
+    text-align: center;
+    padding: 15px 10px;
+}
+
+.footer-content p {
+    font-size: 14px;
+}
+
+.footer strong {
+    color: #fff;
+}

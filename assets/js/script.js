@@ -37,5 +37,8 @@ function revealOnScroll() {
     });
 }
 
+/* ANO AUTOMÁTICO NO FOOTER */
+document.getElementById('year').textContent = new Date().getFullYear();
+
 window.addEventListener('scroll', revealOnScroll);
 window.addEventListener('load', revealOnScroll);
