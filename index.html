@@ -3,64 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FisioVS</title>
+    <title>FisioVS | Fisioterapia Humanizada</title>
+
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<header>
-    <div class="container">
-        <h1>Vitoria Raiane Scheffler</h1>
+<header class="header">
+    <div class="container header-flex">
+        <h1 class="logo">Fisio<span>VS</span></h1>
+
         <nav id="menu">
             <a href="#sobre">Sobre</a>
             <a href="#servicos">Serviços</a>
             <a href="#contato">Contato</a>
         </nav>
+
         <button id="menu-btn">☰</button>
     </div>
 </header>
 
+<!-- HERO -->
 <section class="hero">
-    <h2>Cuidando do seu corpo com dedicação</h2>
-    <p>Atendimento humanizado e personalizado</p>
-    <a href="https://wa.me/555196677041" target="_blank" class="btn">
-        Agendar pelo WhatsApp
-    </a>
-</section>
+    <div class="hero-content">
+        <h2>Cuidando do seu corpo com <span>excelência</span></h2>
+        <p>Atendimento fisioterapêutico humanizado e personalizado</p>
 
-<section id="sobre" class="container">
-    <h2>Sobre</h2>
-    <p>
-        Olá, me chamo Vitoria Raiane Scheffler. Possuo graduação em Fisioterapia pela Universidade Federal do Rio Grande do Norte (2023) e curso-tecnico-profissionalizante em Técnico em massoterapia pela Escola Estadual de Educação Profissional Professor Walquer Cavalcante Maia (2017). Tenho experiência na área de Fisioterapia e Terapia Ocupacional.
-    </p>
-</section>
-
-<section id="servicos" class="bg">
-    <div class="container">
-        <h2>Serviços</h2>
-        <ul class="servicos">
-            <li>Fisioterapia Ortopédica</li>
-            <li>Reabilitação Funcional</li>
-            <li>Pós-operatório</li>
-            <li>Alongamento e prevenção</li>
-            <li>Pilates</li>
-        </ul>
+        <a href="https://wa.me/555196677041" target="_blank" class="btn">
+            Agendar pelo WhatsApp
+        </a>
     </div>
 </section>
 
-<section id="contato" class="container">
-    <h2>Contato</h2>
-    <p>Atendimento com hora marcada</p>
-    <a href="https://wa.me/555196677041" target="_blank" class="btn">
+<!-- SOBRE -->
+<section id="sobre" class="container sobre">
+    <div class="sobre-texto">
+        <h2>Sobre mim</h2>
+        <p>
+            Olá, me chamo <strong>Vitoria Raiane Scheffler</strong>.  
+            Sou graduada em Fisioterapia pela Universidade Federal do Rio Grande do Norte (2023) e técnica em Massoterapia (2017).
+        </p>
+        <p>
+            Possuo experiência em Fisioterapia e Terapia Ocupacional, com foco no cuidado individual e na qualidade de vida dos pacientes.
+        </p>
+    </div>
+</section>
+
+<!-- SERVIÇOS -->
+<section id="servicos" class="servicos-section">
+    <div class="container">
+        <h2>Serviços</h2>
+
+        <div class="servicos-grid">
+            <div class="card">
+                <h3>Fisioterapia Ortopédica</h3>
+                <p>Tratamento de lesões musculares e articulares.</p>
+            </div>
+
+            <div class="card">
+                <h3>Reabilitação Funcional</h3>
+                <p>Recuperação de movimentos e funções do corpo.</p>
+            </div>
+
+            <div class="card">
+                <h3>Pós-operatório</h3>
+                <p>Reabilitação segura e eficaz após cirurgias.</p>
+            </div>
+
+            <div class="card">
+                <h3>Pilates</h3>
+                <p>Fortalecimento, postura e qualidade de vida.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTATO -->
+<section id="contato" class="cta">
+    <h2>Agende seu atendimento</h2>
+    <p>Entre em contato e cuide da sua saúde hoje mesmo</p>
+
+    <a href="https://wa.me/555196677041" target="_blank" class="btn btn-white">
         Falar no WhatsApp
     </a>
 </section>
 
-<!-- Botão flutuante -->
+<!-- BOTÃO WHATSAPP -->
 <a href="https://wa.me/555196677041" class="whatsapp-fixo" target="_blank">
     💬
 </a>
 
-<script src="js/script.js"></script>
+<script src="assets/js/script.js"></script>
 </body>
 </html>
