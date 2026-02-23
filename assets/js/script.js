@@ -1,3 +1,4 @@
+/* MENU MOBILE */
 const btn = document.getElementById('menu-btn');
 const menu = document.getElementById('menu');
 
@@ -5,6 +6,7 @@ btn.addEventListener('click', () => {
     menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
 });
 
+/* HEADER SUMIR / APARECER */
 let lastScroll = 0;
 const header = document.querySelector('.header');
 
@@ -12,12 +14,28 @@ window.addEventListener('scroll', () => {
     const currentScroll = window.pageYOffset;
 
     if (currentScroll > lastScroll && currentScroll > 80) {
-        // Rolando para baixo
         header.classList.add('hide');
     } else {
-        // Rolando para cima
         header.classList.remove('hide');
     }
 
     lastScroll = currentScroll;
 });
+
+/* ANIMAÇÃO AO ROLAR */
+const reveals = document.querySelectorAll('.reveal');
+
+function revealOnScroll() {
+    const windowHeight = window.innerHeight;
+
+    reveals.forEach(el => {
+        const elementTop = el.getBoundingClientRect().top;
+
+        if (elementTop < windowHeight - 100) {
+            el.classList.add('active');
+        }
+    });
+}
+
+window.addEventListener('scroll', revealOnScroll);
+window.addEventListener('load', revealOnScroll);
