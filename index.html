@@ -3,7 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FisioVS | Fisioterapia Humanizada</title>
+
+    <title>FisioVS | Fisioterapia Humanizada e Reabilitação</title>
+    <meta name="description" content="Atendimento fisioterapêutico humanizado, reabilitação musculoesquelética, pilates e pós-operatório. Agende pelo WhatsApp.">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="FisioVS | Fisioterapia Humanizada">
+    <meta property="og:description" content="Cuidado individualizado para sua saúde e qualidade de vida.">
+    <meta property="og:type" content="website">
 
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,13 +24,13 @@
     <div class="container header-flex">
         <h1 class="logo">Fisio<span>VS</span></h1>
 
-        <nav id="menu">
+        <nav id="menu" aria-label="Menu principal">
             <a href="#sobre">Sobre</a>
             <a href="#servicos">Serviços</a>
             <a href="#contato">Contato</a>
         </nav>
 
-        <button id="menu-btn">☰</button>
+        <button id="menu-btn" aria-label="Abrir menu">☰</button>
     </div>
 </header>
 
@@ -31,16 +38,25 @@
 <section class="hero">
     <div class="hero-wrapper">
         <div class="hero-content reveal">
-            <h2>Cuidando do seu corpo com <span>excelência</span></h2>
-            <p>Atendimento fisioterapêutico humanizado e personalizado</p>
+            <h2>
+                Cuidando do seu corpo com <strong>excelência</strong>
+            </h2>
+
+            <p>
+                Atendimento fisioterapêutico humanizado, focado na sua recuperação,
+                funcionalidade e qualidade de vida.
+            </p>
 
             <a href="https://wa.me/555196677041" target="_blank" class="btn">
-                Agendar pelo WhatsApp
+                Agendar atendimento
             </a>
         </div>
 
         <div class="hero-image reveal">
-            <img src="assets/img/foto_vih.png" alt="Vitoria Raiane Scheffler - Fisioterapeuta">
+            <img
+                src="assets/img/foto_vih.png"
+                alt="Vitoria Raiane Scheffler, fisioterapeuta especializada em reabilitação musculoesquelética"
+            >
         </div>
     </div>
 </section>
@@ -49,13 +65,23 @@
 <section id="sobre" class="container sobre reveal">
     <div class="sobre-texto">
         <h2>Sobre mim</h2>
+
         <p>
-            Olá, me chamo <strong>Vitoria Raiane Scheffler</strong>.
-            Sou graduada em Fisioterapia (2023) e técnica em Massoterapia (2017).
+            Olá, me chamo <strong>Vitoria Raiane Scheffler</strong> e sou fisioterapeuta,
+            formada pela Universidade Federal do Rio Grande do Norte, com foco na
+            reabilitação musculoesquelética e no cuidado individualizado de cada paciente.
         </p>
+
         <p>
-            Atuo com foco no cuidado individual, prevenção e reabilitação funcional,
-            sempre priorizando qualidade de vida.
+            Possuo especialização em <strong>Fisioterapia Traumato-Ortopédica</strong> pela
+            Pontifícia Universidade Católica do Paraná, fortalecendo minha atuação clínica
+            com base científica, segurança e eficácia nos tratamentos.
+        </p>
+
+        <p>
+            Também sou técnica em <strong>Massoterapia</strong>, formação que complementa
+            minha prática com terapias manuais, escuta ativa e uma abordagem humanizada,
+            sempre voltada ao bem-estar, funcionalidade e qualidade de vida.
         </p>
     </div>
 </section>
@@ -68,22 +94,22 @@
         <div class="servicos-grid">
             <div class="card reveal">
                 <h3>Fisioterapia Ortopédica</h3>
-                <p>Tratamento de lesões musculares e articulares.</p>
+                <p>Tratamento de lesões musculares, articulares e dores crônicas.</p>
             </div>
 
             <div class="card reveal">
                 <h3>Reabilitação Funcional</h3>
-                <p>Recuperação de movimentos e funções do corpo.</p>
+                <p>Recuperação de movimentos e melhora da funcionalidade.</p>
             </div>
 
             <div class="card reveal">
                 <h3>Pós-operatório</h3>
-                <p>Reabilitação segura e eficaz após cirurgias.</p>
+                <p>Reabilitação segura e progressiva após cirurgias.</p>
             </div>
 
             <div class="card reveal">
                 <h3>Pilates</h3>
-                <p>Fortalecimento, postura e qualidade de vida.</p>
+                <p>Fortalecimento, postura, mobilidade e qualidade de vida.</p>
             </div>
         </div>
     </div>
@@ -92,18 +118,21 @@
 <!-- CTA / CONTATO -->
 <section id="contato" class="cta reveal">
     <h2>Agende seu atendimento</h2>
-    <p>Entre em contato e cuide da sua saúde hoje mesmo</p>
+    <p>
+        Entre em contato e dê o primeiro passo para cuidar da sua saúde.
+    </p>
 
     <a href="https://wa.me/555196677041" target="_blank" class="btn btn-white">
         Falar no WhatsApp
     </a>
 </section>
-<p></p>
+
 <!-- BOTÃO WHATSAPP -->
-<a href="https://wa.me/555196677041" class="whatsapp-fixo" target="_blank">
+<a href="https://wa.me/555196677041" class="whatsapp-fixo" target="_blank" aria-label="Falar no WhatsApp">
     💬
 </a>
 
+<!-- FOOTER -->
 <footer class="footer">
     <div class="container footer-content">
         <p>
