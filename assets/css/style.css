@@ -10,6 +10,10 @@ body {
     background: #fff;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* HEADER */
 .header {
     position: fixed;
@@ -269,4 +273,67 @@ nav a {
 
 .whatsapp-fixo:hover {
     transform: scale(1.08);
+}
+
+/* CTA COM ÍCONES */
+.cta {
+    background: #1fa4a9;
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.cta h2 {
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.cta p {
+    margin-bottom: 20px;
+}
+
+.cta-icons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+/* ÍCONES */
+.cta-icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: #fff;
+    color: #1fa4a9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    text-decoration: none;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* CORES POR REDE */
+.cta-icon.whatsapp { color: #1fa4a9; }
+.cta-icon.instagram { color: #1fa4a9; }
+.cta-icon.email { color: #1fa4a9; }
+
+/* HOVER */
+.cta-icon:hover {
+    transform: translateY(-6px) scale(1.05);
+    box-shadow: 0 14px 30px rgba(0,0,0,0.25);
+}
+
+/* RESPONSIVO */
+@media (max-width: 600px) {
+    .cta-icons {
+        gap: 18px;
+    }
+
+    .cta-icon {
+        width: 56px;
+        height: 56px;
+        font-size: 24px;
+    }
 }
