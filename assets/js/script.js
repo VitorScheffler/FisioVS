@@ -3,7 +3,14 @@ const btn = document.getElementById('menu-btn');
 const menu = document.getElementById('menu');
 
 btn.addEventListener('click', () => {
-    menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+    menu.classList.toggle('active');
+});
+
+// FECHAR MENU AO CLICAR EM UM LINK (MOBILE)
+document.querySelectorAll('#menu a').forEach(link => {
+    link.addEventListener('click', () => {
+        menu.classList.remove('active');
+    });
 });
 
 /* HEADER SUMIR / APARECER */
