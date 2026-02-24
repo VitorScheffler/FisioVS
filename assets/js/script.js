@@ -37,6 +37,30 @@ function revealOnScroll() {
     });
 }
 
+// SCROLL SUAVE SEM # NA URL
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener('click', function (e) {
+        const targetId = this.getAttribute('href').substring(1);
+        const targetSection = document.getElementById(targetId);
+
+        if (targetSection) {
+            e.preventDefault(); // remove o # da URL
+
+            const header = document.querySelector('.header');
+            const headerHeight = header ? header.offsetHeight : 0;
+
+            const elementPosition = targetSection.getBoundingClientRect().top;
+            const offsetPosition =
+                elementPosition + window.pageYOffset - headerHeight + 10;
+
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+            });
+        }
+    });
+});
+
 /* ANO AUTOMÁTICO NO FOOTER */
 document.getElementById('year').textContent = new Date().getFullYear();
 
